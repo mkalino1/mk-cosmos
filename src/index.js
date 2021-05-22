@@ -6,6 +6,7 @@ import './styles/Illustration.scss';
 import './styles/Modal.scss';
 import './styles/Links.scss';
 import './styles/Footer.scss';
+import './styles/Loader.scss';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -21,6 +21,18 @@
     left: 135px;
     background: url(assets/Rocket.png);
     z-index: 50;
+
+    &--fly {
+        animation-name: flying;
+        animation-duration: 3s;
+    }
+}
+
+@keyframes flying {
+    0%   {left: 135px;}
+    25%  {left: 150px;}
+    50%  {left: 105px;}
+    100% {left: 135px;}
 }
 
 .LandingGear {
@@ -30,5 +42,25 @@
     left: 152px;
     top: 122px;    
     background: url(assets/LandingGear.png);
+    z-index: 20;
+}
+
+.SmokeLeft {
+    position: absolute;
+    width: 65px;
+    height: 62px;
+    left: 87px;
+    top: 82px;
+    background: url(assets/Smoke2.png);
+    z-index: 20;
+}
+
+.SmokeRight {
+    position: absolute;
+    width: 52px;
+    height: 50px;
+    left: 220px;
+    top: 95px;
+    background: url(assets/Smoke1.png);
     z-index: 20;
 }

@@ -29,10 +29,8 @@
         position: absolute;
         width: 24px;
         height: 24px;
-        left: 65.42%;
-        right: 32.92%;
-        top: 29.69%;
-        bottom: 67.19%;
+        left: 473px;
+        top: 9px;
 
         border: 2px solid blue;
         cursor: pointer;
@@ -47,5 +45,60 @@
         top: calc(50% - 14px/2 + 0px);
 
         background: #C3B8E8;
+    }
+}
+
+.Container {
+    position: absolute;
+    top: 124px;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    width: 492px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background: #221A3C;
+        height: 212px;
+      }
+      
+      /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 8px;
+        background: #221A3C;
+      }
+       
+      /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #53477D;
+        border-radius: 8px;
+      }
+      
+      /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #342863; 
+      }
+}
+
+.Row {
+    margin: 14px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__Cell {
+        width: 100%;
+        text-align: left;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;        
+        
+        color: #D2CBE9;
     }
 }

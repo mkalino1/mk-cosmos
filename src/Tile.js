@@ -10,6 +10,9 @@ export default function Tile(props) {
     return (
         <div className={props.className} onClick={setModal} >
             <p className="Tile__text">{props.text}</p>
+            <div>
+                <p className="Tile__details">Details</p>
+            </div>
         </div>
     )
 }

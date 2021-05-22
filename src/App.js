@@ -14,7 +14,6 @@ function App() {
       <Links setModalVisible={setModalVisible} setModalText={setModalText}/>
       <Modal modalVisible={modalVisible} modalText={modalText} setModalVisible={setModalVisible}/>
       <Illustration/>
-      <button className="LaunchButton">Launch Rocket!</button>
 
       <Footer/>
 

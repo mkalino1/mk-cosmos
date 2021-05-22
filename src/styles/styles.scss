@@ -18,21 +18,25 @@ body {
 }
 
 .LaunchButton {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 32px;
-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 32px;
+    color: #FFFFFF;
 
-position: absolute;
-left: 64.31%;
-right: 22.92%;
-top: 72.92%;
-bottom: 20.83%;
-cursor: pointer;
+    position: absolute;
+    left: 64.31%;
+    right: 22.92%;
+    top: 72.92%;
+    bottom: 20.83%;
+    cursor: pointer;
 
-background: #7860D7;
-border-radius: 8px;
+    background: #7860D7;
+    border-radius: 8px;
+
+    &:hover {
+        background: #05C9B7;
+    }
 }
 
 .Header {
@@ -43,6 +47,14 @@ border-radius: 8px;
     top: 68px;
     background-color: blue;
 
+}
+
+.ErrorMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    z-index: 15;
 }
 
 

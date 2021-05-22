@@ -11,11 +11,13 @@ export default function Modal(props) {
     useEffect(() => {
         if(props.modalText){
             setLoading(true);
+            setError(false);
             axios.get("https://api.spacexdata.com/v4/"+props.modalText.toLowerCase()).then(res => {
                 setLoading(false);
                 setData(res.data);
-                // console.log(data);
             }).catch( error => {
+                setLoading(false);
+                setError(true);
                 console.log(error);
             });    
         }
@@ -36,8 +38,25 @@ export default function Modal(props) {
             </div>
 
             <Header/>
-            {loading && <p><br/><br/><br/>It's loading time</p>}
-            { data.map( (o) => <p>{o.type}</p> ) }
+
+            {loading && <div className="loader loader--more">
+                            <div className="loader__box">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <div className="loader__text">Loading</div>
+                        </div>
+            }
+
+            {error && <div className="ErrorMessage"><p>Something went wrong. Try again later!</p></div>}
+            
+            {!loading && !error &&  <div className="Container">
+                    { data.map( (o) => 
+                        <div className="Row">
+                            <div className="Row__Cell">{o.type}</div>
+                            <div className="Row__Cell">{o.status}</div>
+                        </div> ) }
+                </div>
+            }
         </div>
     )
 }
