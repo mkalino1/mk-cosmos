@@ -31,8 +31,6 @@
         height: 24px;
         left: 473px;
         top: 9px;
-
-        border: 2px solid blue;
         cursor: pointer;
     }
 
@@ -45,7 +43,67 @@
         top: calc(50% - 14px/2 + 0px);
 
         background: #C3B8E8;
+        mask-image: url(assets/IconX.png);
     }
+}
+
+.Header {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 492px;
+    height: 40px;
+    left: 24px;
+    top: 68px;
+
+    &__Cell {
+        display: flex;
+        align-content: center;
+        width: 100%;
+        border-radius: 4px;
+        background: #342A56;
+        position: relative;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #A094C6;
+
+        &--active {
+            background: #251D42;
+        }
+
+        & p {
+            width: 100%;
+            margin: 10px 36px 10px 16px;
+        }
+    }
+
+    &__Button {
+        width: 8px;
+        height: 12px;
+        cursor: pointer;
+        position: absolute;
+        right: 18px;
+        top: 14px;
+
+        &--Up {
+            background: #C3B8E8;
+            mask-image: url(assets/Up.png);
+        }
+
+        &--Down {
+            background: #C3B8E8;
+            mask-image: url(assets/Down.png);
+        }
+        &--Both {
+            background: #C3B8E8;
+            mask-image: url(assets/Down.png), url(assets/Up.png);
+        }
+    }
+
 }
 
 .Container {
@@ -54,7 +112,7 @@
     left: 24px;
     display: flex;
     flex-direction: column;
-    height: 230px;
+    height: 220px;
     width: 492px;
     overflow: auto;
 
@@ -66,7 +124,6 @@
       
       /* Track */
     &::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey; 
         border-radius: 8px;
         background: #221A3C;
       }
@@ -81,6 +138,16 @@
     &::-webkit-scrollbar-thumb:hover {
         background: #342863; 
       }
+
+    &__Gradient {
+        position: absolute;
+        width: 487px;
+        height: 52px;
+        left: 24px;
+        top: 294px;
+        
+        background: linear-gradient(180deg, rgba(43, 34, 74, 0) 0%, #2B224A 100%);
+    }
 }
 
 .Row {

@@ -11,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="Logo"/>
       <Links setModalVisible={setModalVisible} setModalText={setModalText}/>
       <Modal modalVisible={modalVisible} modalText={modalText} setModalVisible={setModalVisible}/>
       <Illustration/>
