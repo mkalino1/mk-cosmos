@@ -8,7 +8,7 @@ export default function Modal(props) {
         "Capsules": ["Type", "Status"],
         "Crew": ["Name", "Status"],
         "Rockets": ["Name", "Type"],
-        "Starlink": ["Name", "Status"]
+        "Starlink": ["Version", "Launch"]
     }
 
     const [data, setData] = useState([]);
@@ -28,12 +28,9 @@ export default function Modal(props) {
                         second: d[labels[1].toLowerCase()]
                     }
                 }));
-
-                // console.log(res.data);
             }).catch( error => {
                 setLoading(false);
                 setError(true);
-                console.log(error);
             });    
         }
 
@@ -53,11 +50,11 @@ export default function Modal(props) {
 
             {props.modalText && <Header column_labels={column_labels[props.modalText]} data={data} setData={setData}/>}
 
-            {loading && <div className="loader loader--more">
-                            <div className="loader__box">
+            {loading && <div className="Loader Loader--more">
+                            <div className="Loader__box">
                                 <span></span><span></span><span></span><span></span><span></span>
                             </div>
-                            <div className="loader__text">Loading</div>
+                            <div className="Loader__text">Loading</div>
                         </div>
             }
 
@@ -66,8 +63,8 @@ export default function Modal(props) {
             {!loading && !error &&  
                 <>
                     <div className="Container">
-                        { data.map( (o) => 
-                            <div className="Row">
+                        { data.map( (o, index) => 
+                            <div className="Row" key={index}>
                                 <div className="Row__Cell">{o.first}</div>
                                 <div className="Row__Cell">{o.second}</div>
                             </div> ) }

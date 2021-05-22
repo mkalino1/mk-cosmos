@@ -1,0 +1,36 @@
+.Point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+
+    &--1 {
+        background: #7860D7;
+        top: 652px;
+        left: 660px;
+    }
+
+    &--2 {
+        background: #E34A67;
+        top: 144px;
+        left: 81px;
+    }
+
+    &--3 {
+        background: #E34A67;
+        top: 552px;
+        left: 1259px;
+    }
+
+    &--4 {
+        background: #00C9B7;
+        top: 500px;
+        left: 297px;
+    }
+
+    &--5 {
+        background: #00C9B7;
+        top: 84px;
+        left: 875px;
+    }
+}

@@ -4,6 +4,7 @@ import Modal from './Modal';
 
 import React, { useState } from 'react';
 import Footer from './Footer';
+import BackgroundElements from './BackgroundElements';
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -15,9 +16,8 @@ function App() {
       <Links setModalVisible={setModalVisible} setModalText={setModalText}/>
       <Modal modalVisible={modalVisible} modalText={modalText} setModalVisible={setModalVisible}/>
       <Illustration/>
-
       <Footer/>
-
+      <BackgroundElements/>
     </div>
   );
 }
