@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mk-cosmos/static/css/main.99a4d953.chunk.css",
-    "main.js": "/mk-cosmos/static/js/main.ebc8658a.chunk.js",
-    "main.js.map": "/mk-cosmos/static/js/main.ebc8658a.chunk.js.map",
+    "main.css": "/mk-cosmos/static/css/main.30795831.chunk.css",
+    "main.js": "/mk-cosmos/static/js/main.ffef41ba.chunk.js",
+    "main.js.map": "/mk-cosmos/static/js/main.ffef41ba.chunk.js.map",
     "runtime-main.js": "/mk-cosmos/static/js/runtime-main.7861f5ea.js",
     "runtime-main.js.map": "/mk-cosmos/static/js/runtime-main.7861f5ea.js.map",
     "static/js/2.70b486d8.chunk.js": "/mk-cosmos/static/js/2.70b486d8.chunk.js",
     "static/js/2.70b486d8.chunk.js.map": "/mk-cosmos/static/js/2.70b486d8.chunk.js.map",
     "index.html": "/mk-cosmos/index.html",
-    "static/css/main.99a4d953.chunk.css.map": "/mk-cosmos/static/css/main.99a4d953.chunk.css.map",
+    "static/css/main.30795831.chunk.css.map": "/mk-cosmos/static/css/main.30795831.chunk.css.map",
     "static/js/2.70b486d8.chunk.js.LICENSE.txt": "/mk-cosmos/static/js/2.70b486d8.chunk.js.LICENSE.txt",
     "static/media/Links.scss": "/mk-cosmos/static/media/Image4.c30c1b96.png",
     "static/media/Illustration.scss": "/mk-cosmos/static/media/Planet.372d5785.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.7861f5ea.js",
     "static/js/2.70b486d8.chunk.js",
-    "static/css/main.99a4d953.chunk.css",
-    "static/js/main.ebc8658a.chunk.js"
+    "static/css/main.30795831.chunk.css",
+    "static/js/main.ffef41ba.chunk.js"
   ]
 }
