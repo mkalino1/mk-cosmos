@@ -1,0 +1,58 @@
+.Links {
+    position: absolute;
+    width: 350px;
+    height: 448px;
+    left: 260px;
+    top: 160px;
+}
+
+.Tile {
+    position: absolute;
+    width: 160px;
+    height: 208px;
+    border-radius: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 10px #2196f3, 0 0 30px #2196f3, 0 0 50px #2196f3;
+    }
+
+    &--1 {
+        left: 0;
+        top: 0;
+        background: linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%), url(assets/Image1.png);
+    }
+    &--2 {
+        left: 190px;
+        top: 0;
+        background: linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%), url(assets/Image2.png);
+    }
+    &--3 {
+        left: 0;
+        top: 240px;
+        background: linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%), url(assets/Image3.png);
+    }
+    &--4 {
+        left: 190px;
+        top: 240px;
+        background: linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%), url(assets/Image4.png);
+    }
+
+    &__text {
+        position: absolute;
+        width: 55px;
+        height: 20px;
+        left: 48px;
+        top: 164px;
+        
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        
+        text-align: center;
+        
+        color: #FFFFFF;
+    }
+}

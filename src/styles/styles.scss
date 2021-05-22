@@ -1,0 +1,49 @@
+$backgroundColor: #221B3A;
+
+body {
+    background-color: $backgroundColor;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.App{
+    position: relative;
+    width: 1440px;
+    height: 768px;
+    margin: auto;
+}
+
+.LaunchButton {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 32px;
+color: #FFFFFF;
+
+position: absolute;
+left: 64.31%;
+right: 22.92%;
+top: 72.92%;
+bottom: 20.83%;
+cursor: pointer;
+
+background: #7860D7;
+border-radius: 8px;
+}
+
+.Header {
+    position: absolute;
+    width: 492px;
+    height: 40px;
+    left: 24px;
+    top: 68px;
+    background-color: blue;
+
+}
+
+
+

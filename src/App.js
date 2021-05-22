@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Illustration from './Illustration';
+import Links from './Links';
+import Modal from './Modal';
+
+import React, { useState } from 'react';
+import Footer from './Footer';
 
 function App() {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [modalText, setModalText] = useState('');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Links setModalVisible={setModalVisible} setModalText={setModalText}/>
+      <Modal modalVisible={modalVisible} modalText={modalText} setModalVisible={setModalVisible}/>
+      <Illustration/>
+      <button className="LaunchButton">Launch Rocket!</button>
+
+      <Footer/>
+
     </div>
   );
 }

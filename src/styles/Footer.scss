@@ -1,0 +1,29 @@
+
+.Footer {
+    position: absolute;
+    width: 1111px;
+    left: 165px;
+    top: 728px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+        
+    color: #8D7FBC;
+
+    &__Text1 {
+        position: absolute;
+        width: 214px;
+        left: 0;
+    }
+
+    &__Text2 {
+        position: absolute;
+        width: 195px;
+        height: 16px;
+        left: 916px;  
+    }
+}

@@ -1,0 +1,34 @@
+.Illustration {
+    position: absolute;
+    left: 57.64%;
+    right: 16.32%;
+    top: 11.98%;
+    bottom: 30.21%;
+}
+
+.Planet {
+    position: absolute;
+    height: 372px;
+    width: 375px;
+    top: 72px;
+    background: url(assets/Planet.png);
+}
+
+.Rocket{
+    position: absolute;
+    width: 102px;
+    height: 140px;
+    left: 135px;
+    background: url(assets/Rocket.png);
+    z-index: 50;
+}
+
+.LandingGear {
+    position: absolute;
+    width: 68px;
+    height: 23px;
+    left: 152px;
+    top: 122px;    
+    background: url(assets/LandingGear.png);
+    z-index: 20;
+}
